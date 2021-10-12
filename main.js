@@ -3,6 +3,7 @@ let openmenu = document.getElementById("respmenu");
 openmenu.addEventListener("click", open);
 function open() {
     document.getElementById("menu").style.visibility = "unset";
+    document.getElementById("menu").style.transition="0.5s";
   }
   closemenu.addEventListener("click", close);
   function close() {
