@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+:root{
+    --very-darkblue:hsl(220, 13%, 13%);
+    --Dark-grayish-blue:hsl(219, 9%, 45%);
+    --Grayish-blue:hsl(220, 14%, 75%);
+    --Light-grayish-blue:hsl(223, 64%, 98%);
+    --white:hsl(0, 0%, 100%)
+}
+body{
+    background-color: white;
+}
+main{
+    margin:5px 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}   
+.part-left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    cursor: pointer;
+    display: block;
+
+}
+.menu{
+    margin-left: 35px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 50px;
+}
+ul > li {
+    padding: 0 15px;
+    
+}
+.wordmenu{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    position: relative;
+    padding: 0 5px;
+}
+.add{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.addcart{
+    margin-right: 20px;
+}
+.wordmenu::after{
+    content: "";
+    position: absolute;
+    background-color: hsl(26, 100%, 55%);
+    height: 3px;
+    width:0;
+    left: 0px;
+    bottom:-32px;
+    transition: 0.25s ease-in-out;
+}
+#avatar{
+    width:30%;
+    cursor: pointer;
+}
+.wordmenu:hover{
+    color: black;
+}
+.wordmenu:hover:after{
+    width: 100%;
+}
+.wordmenu:active:after{
+    width: 100%;
+}
+#avatar:hover{
+    border: 2px solid hsl(26, 100%, 55%) ;
+    border-radius: 100%;
+}
+.respmenu{
+   visibility: hidden;
+   opacity: 0;
+   display: none;
+   cursor: pointer;
+}
+.resplogo{
+    display: flex;
+    align-items: center;
+}
+#closemenu{
+    margin: 0px -27px;
+    cursor: pointer;
+    visibility: hidden;
+}
