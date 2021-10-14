@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
+    outline: none;
 }
 :root{
     --very-darkblue:hsl(220, 13%, 13%);
@@ -15,7 +16,9 @@
 }
 body{
     background-color: white;
+    font-size: 16px;
 }
+
 main{
     margin:5px 20px;
 }
@@ -36,7 +39,7 @@ header{
 .menu{
     margin-left: 35px;
 }
-ul{
+.firsty{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -102,4 +105,103 @@ ul > li {
     margin: 0px -27px;
     cursor: pointer;
     visibility: hidden;
+}
+/**********************************
+**********************
+**********************************************************
+***************************************************************************************
+***************************************************************************************
+********************************************************************************************************************
+**************************************************************************************************************************************************/
+article{
+    margin: 60px 60px 0 60px;
+    display: flex;
+}
+.imgprinc{
+    display: flex;
+    justify-content: center;
+}
+.imgprinc > img{
+    width: 450px;
+    height: 400px;
+    border-radius: 15px;
+}
+.part-one {
+    width: 50%;
+}
+.prouduct{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.second{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.grouppic{
+    margin-top: 35px;
+}
+.prouduct:hover{
+    border: 3px solid hsl(26, 100%, 55%);
+    opacity: 0.8;
+}
+/**************************************************************
+******************************************************
+***** P A R T   L E F T ***********************************
+***********************************************************************************
+*********************************************/
+.part-two{
+    width: 50%;
+}
+p{
+    font-weight: 700;
+}
+h1{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+.para-one{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.paratwo{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-bottom: 25px;
+    width: 498px;
+}
+.prix{
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.numb{
+    display: flex;
+    width: 28%;
+    background-color: var(--Light-grayish-blue);
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+    border-radius: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    margin-left: 30px;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 43px 1px hsl(26, 100%, 55%);
+}
+.addtocart{
+    display: flex;
 }

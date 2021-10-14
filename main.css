@@ -1,8 +1,46 @@
+@media only screen and (max-width: 1210px){
+    article{
+        margin: 60px 20px 0 20px;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 1150px){
+    article{
+        margin: 60px 0px 0 0px;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 1020px){
+    article{
+        display: inline;
+        text-align: center;
+    }
+    .part-one {
+        width: 100%;
+    }
+    .part-two{
+        width: 100%;
+    }
+    .paratwo{
+        width: 100%;
+        margin: 0 10px 0 5px;
+    }
+    .prix{
+        justify-content: center;
+    }
+    .prix2{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
+
 @media only screen and (max-width: 895px){
-    ul{
+    .firsty{
         display: block;
     }
-    ul > li{
+    .firsty > li{
         padding: 20px 0;
     }
     #closemenu{
