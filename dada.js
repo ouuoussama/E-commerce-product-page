@@ -55,6 +55,7 @@ function add2(){
   thenumber.value=parseInt(thenumber.value) -1;
   inside--;
   document.getElementById("thenumber").value = inside;
+  
   if (inside === 0){
     minus.removeEventListener("click", add2);
     minus.style.cursor = "no-drop";
@@ -62,8 +63,8 @@ function add2(){
   total();
 }
 function total(){
-  var tootal = inside * pricecont; 
-  document.getElementById("price").innerHTML=tootal+".00";
+  var prototal = inside * pricecont; 
+  document.getElementById("price").innerHTML=prototal+".00";
 }
 ////////// Z O O M I M A G E///////
 let zoom = document.querySelector(".zoom");
@@ -131,15 +132,55 @@ function change13() {
   zoomimg.src = "images/image-product-4.jpg";
 }
 //////////////////////////////////////////////////////// L A S T  T H I N G 
-let additemtocart = document.querySelector(".btn");
-
-
-additemtocart.addEventListener("click", ()=> {
-  cardNumbers();
-})
-function cardNumbers() {
-  let ml = localStorage.getItem('cardNumbers');7 
-    localStorage.setItem('cartnumber', inside);
-    ml = parseInt(ml)
-    console.log(typeof ml);
+function showandhide(){
+    if (a==1) {
+        document.querySelector(".addtocart1").style.display="inline-block";
+        return a=0
+          }
+          else{
+            document.querySelector(".addtocart1").style.display="none";
+            return  a=1
+          }
 }
+let btn = document.querySelector(".btn");
+let checkout = document.querySelector(".checkout");
+let p02 = document.querySelector(".p02");
+let numbi = document.querySelector("#numbi");
+let insidethecart =document.querySelector(".insidethecart");
+let btnl = document.querySelector("#btnl");
+let checkprice = document.querySelector("#checkprice");
+var prototal1 = inside * pricecont; 
+btn.addEventListener("click", tn);
+function tn() {
+    checkout.style.visibility = "visible";
+    checkout.value = inside;
+    numbi.innerHTML= inside;
+    total2();
+    function total2(){
+      var prototal = inside * pricecont; 
+      document.getElementById("checkprice").innerHTML= "$" + prototal+".00";
+    }
+    if (inside == 0) {
+      checkout.style.visibility = "hidden";
+      insidethecart.style.display = "none";
+      p02.style.display = "inline-block";
+      btnl.style.display="none";      
+    }
+    else if (inside >= 1 ) {
+      p02.style.display = "none";
+      insidethecart.style.display = "flex";
+      btnl.style.display="flex"; 
+     
+    }
+}
+let delete1 = document.querySelector("#delete");
+delete1.addEventListener("click", prr)
+function prr(params) { 
+  checkout.style.visibility = "hidden"
+  insidethecart.style.display = "none";
+      btnl.style.display="none"; 
+      p02.style.display = "block";
+}
+
+
+///////////////////////////D O N E //////////////////////

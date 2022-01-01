@@ -32,6 +32,7 @@
     .prix{
         justify-content: center;
         align-items: center;
+        
     }
     .addtocart{
         display: inline-block; 

@@ -59,11 +59,11 @@ ul > li {
     text-align: right;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 0 -20px;
+    justify-content: space-between;
+    margin: 0 0px;
 }
 .addcart{
-    margin-right: -66px;
+    margin-right: -155px;
 }
 .wordmenu::after{
     content: "";
@@ -76,7 +76,7 @@ ul > li {
     transition: 0.25s ease-in-out;
 }
 #avatar{
-    width:23%;
+    width:33%;
     cursor: pointer;
 }
 .wordmenu:hover{
@@ -111,14 +111,58 @@ ul > li {
     border: none;
     font-size: 13px;
     position: relative;
-    width: 7%;
+    width: 18%;
+    height: 55%;
     top: -7px;
-    right: -12px;
+    right: -49px;
     background-color: hsl(26, 100%, 55%);
     border-radius: 50%;
     text-align: center;
     color: white;
+    visibility: hidden;
 }
+.addtocart1{
+    background-color: white;
+    width: 385px;
+    height: auto;
+    right: 12vh;
+    top: 8vh;
+    padding: 25px;
+    position: absolute;
+    display: none;
+    border-radius: 5%;
+    box-shadow: 0vh 3vh 6vh 0vh rgba(0, 0, 0, 7%);
+}
+.addtocart1 > .p01 {
+    margin-bottom:10px;
+}
+.addtocart1 > .p02 {
+    padding: 70px 0;
+    color: var(--Dark-grayish-blue);
+    text-align: center;
+}
+.imgcart{
+    height: 50px;
+    width: 50px;
+    border-radius: 15%;
+}
+.insidethecart{
+    margin:40px 0;
+    display: none;
+    animation: .1s ease-in-out;
+}
+#btnl{
+    width: 100%;
+    padding: 16px;
+    display: none;
+    justify-content: center;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
 /**********************************
 **********************
 **********************************************************
@@ -230,6 +274,9 @@ input{
     width: 15%;
 }
 .btn:hover{
+    box-shadow: 0px 0px 43px 1px hsl(26, 100%, 55%);
+}
+#btnl:hover {
     box-shadow: 0px 0px 43px 1px hsl(26, 100%, 55%);
 }
 /***************************************

@@ -41,11 +41,35 @@
         </div>
       </div>
       <div class="add">
-        <img class="addcart" src="images/icon-cart.svg" style="cursor: pointer;" alt="cart">
+        <img class="addcart" id="addcart" src="images/icon-cart.svg" style="cursor: pointer;" alt="cart" onclick="showandhide()">
         <input class="checkout" type="text" value="0" readonly>
         <img id="avatar" src="images/image-avatar.png" alt="avatar">
       </div>
     </header>
+    <div class="addtocart1">
+      <p class="p01">Cart</p>
+      
+      <hr>
+      <p class="p02">Your cart is empty.</p>
+      <div class="insidethecart">
+        <div>
+          <img class="imgcart"  style="margin-right: 15px;" src="images/image-product-1-thumbnail.jpg" alt="product">
+        </div>
+        <div>
+          <p style="color: hsl(219, 9%, 45%);">Fall Limited Edition Sneakers</p>
+          <div style="display: flex; padding-top: 3px;">
+            <p style="padding: 2px; font-size: 14px; color: hsl(219, 9%, 45%);">$125.00</p>
+            <p style="padding: 2px; font-size: 14px; color: hsl(219, 9%, 45%);"> x </p>
+            <p  id="numbi" style="padding: 2px; font-size: 14px; color: hsl(219, 9%, 45%);"> 3 </p>
+            <p id="checkprice" style="padding: 2px 4px; ">$375.00</p>
+          </div>
+        </div>
+        <img id="delete" style="margin-left: 17px; height: 50%; margin-top: 15px; cursor: pointer;" src="images/icon-delete.svg" alt="">
+      </div>
+      <div id="btnl">
+        <p>checkout</p>
+    </div>  
+    </div>
     <hr>
     <article>
       <div class="part-one">
